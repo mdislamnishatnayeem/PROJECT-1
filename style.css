@@ -1,0 +1,99 @@
+
+.bg-light{
+    background-image: linear-gradient(to left,rgb(133, 33, 16) 0%,rgb(255, 0, 0) 100%);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    color: white;
+    padding: 0px;
+   
+}
+
+#optionbar-1,#optionbar-2,#optionbar-3,#optionbar-4{
+    border:solid 3px rgb(174, 96, 96);
+    border-radius: 10px;
+    background-color: rgb(193, 255, 247);
+    width: 80%;
+    height:50px;
+   
+    
+}
+
+.container{
+    margin-bottom: 80px;
+    border-radius: 10px;
+    
+   
+   
+}
+.selections{
+    background-image: url('images/wp4323467-blood-donation-wallpapers.jpg');
+    background-size: cover;
+    background-position:50% 50%;
+    height:300px;
+    width:95%;
+   
+  
+   
+}
+.img-fluid {
+    max-width: 90%;
+    height: auto;
+    padding:0px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgb(143, 3, 3);
+}
+option{
+    color:black;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* -------------------------DISTRICT SEARCH----------------------------------------- */
+
+.card{
+    margin-right: 10px;
+    box-shadow: 10px 10px 20px lightgray;
+    margin-right: 10px;
+   margin-bottom: 10px;
+   border-radius: 12px;
+    
+}
+.row{
+    --bs-gutter-x: 1.5rem;
+   
+}
+#ALL-HISTORY{
+    box-shadow:10px 10px 20px rgb(255, 98, 98);
+}
+#ALL-HISTORY #group{
+ background-color: darkred;
+    color :white;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.about{
+    
+    color:red;
+    padding: 2px 4px;
+    font-weight: bold;
+   
+}
+/* NOW HAVE TO WORK WITH JS */
+#UPAZILA-SEARCH{
+    display: none;
+}
+#UNION-SEARCH{
+    display: none;
+}
+#DISTRICT-SEARCH{
+    display: none;
+}
+#ALL-HISTORY{
+   
+}
+
+

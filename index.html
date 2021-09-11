@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">  
+    </script> 
+    <title>BLOOD DONATION</title>
+</head>
+<body>
+  
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+             
+              <a class="navbar-brand" href="#logo">
+                
+                    <img class="img-fluid" src="images/logo.png" width="100px" height="100px" alt="">
+             </a>
+            <h2>BLOOD DONATOR</h2>
+            </div></nav>
+    </div>   
+
+    
+
+  
+            
+
+   
+
+
+
+
+
+
+
+    <div class="container selections" style="color: white;" id="BLOOD-GROUP-SEARCH">
+      <div class="d-flex justify-content-center">   
+        <span style="background-color:rgb(202, 0, 0);opacity:0.8;padding: 10px 20px;">
+    <p>আপনি যে রক্তের গ্রুপ খুজছেন ?</p>
+    <p>রক্তের গ্রুপ নিবাচন করুন:-</p>
+    </span>
+    </div>
+         <div class="d-flex justify-content-center align-items-center ">
+           <select name="forma" onchange="location = this.value;" id="optionbar-1">
+             <option  value="#nayeem">আপনি যে রক্তের গ্রুপ খুজছেন ?</option>
+             <option value="#A-Positive">A-Positive</option>
+            <option value="#A-Negative">A-Negative</option>
+            <option value="#B-Positive">B-Positive</option>
+            <option value="#B-Negative">B-Negative</option>
+            <option value="#O-Positive">O-Positive</option>
+            <option value="#O-Negative">O-Negative</option>
+            <option value="#AB-Positive">AB-Positive</option>
+            <option value="#AB-Negative">AB-Negative</option>
+           </select>
+       
+       </div>
+     
+     </div>
+
+
+
+
+
+
+<div class="container selections" style="color: white;" id="DISTRICT-SEARCH">
+   <div class="d-flex justify-content-center">   
+     <span style="background-color:rgb(202, 0, 0);opacity:0.8;padding: 10px 20px;">
+<p>আপনি যে জেলায় রক্ত খুজছেন ?</p>
+<p>জেলার নামটি নিবাচন করুন:-</p>
+</span>
+</div>
+      <div class="d-flex justify-content-center align-items-center ">
+        <select name="forma" onchange="location = this.value;" id="optionbar-2">
+          
+            <option  value="#nayeem">আপনি যে জেলায় রক্ত খুজছেন ?</option>
+            <option  value="#DINAJPUR">DINAJPUR</option>
+            <option  value="#RANGPUR">RANGPUR</option>
+            
+            
+        
+        </select>
+    
+    </div>
+  
+  </div>
+
+    
+
+
+
+
+
+
+
+<div class="container selections" style="color: white;" id="UPAZILA-SEARCH">
+  <div class="d-flex justify-content-center">   
+    <span style="background-color:rgb(202, 0, 0);opacity:0.8;padding: 10px 20px;">
+<p>আপনি যে উপজেলায় রক্ত খুজছেন ?</p>
+<p>উপজেলার নামটি নিবাচন করুন:-</p>
+</span>
+</div>
+     <div class="d-flex justify-content-center align-items-center ">
+       <select name="forma" onchange="location = this.value;" id="optionbar-3">
+         <option  value="#nayeem">আপনি যে উপজেলার রক্ত খুজছেন ?</option>
+         <!-- <option id="SADAR" value="#SADAR">SADAR</option>
+         <option id="PHULBARI" value="#PHULBARI">PHULBARI</option> -->
+         
+       </select>
+   
+   </div>
+ 
+ </div>
+
+
+
+
+
+
+
+
+ 
+
+
+
+  
+ <div class="container selections" style="color: white;" id="UNION-SEARCH">
+  <div class="d-flex justify-content-center">   
+    <span style="background-color:rgb(202, 0, 0);opacity:0.8;padding: 10px 20px;">
+<p>আপনি যে ইউনিয়নে রক্ত খুজছেন ?</p>
+<p>ইউনিয়নের নামটি নিবাচন করুন:-</p>
+</span>
+</div>
+     <div class="d-flex justify-content-center align-items-center ">
+       <select name="forma" onchange="location = this.value;" id="optionbar-4">
+         
+           <option  value="#nayeem">আপনি যে ইউনিয়নে রক্ত খুজছেন ?</option>
+           <!-- <option value="#7">7</option>
+           <option value="#8">8</option> -->
+       
+       </select>
+   
+   </div>
+ 
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<div class="container" id="ALL-HISTORY">
+  <h4 class="d-flex justify-content-center"><span id="group" > Blood Donators list Of BANGLADESH </span> </h4> <br><br>
+  <div class="card-group">
+
+
+      <div class="O-Positive DINAJPUR DINAJPUR-SADAR SUNDARBAN card ALL-ROUNDER" id="name1">
+        <img src="IMAGES/wp4323467-blood-donation-wallpapers.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b><span class="about">Blood Group:</span> O+</b></h5>
+          <h5 class="card-title"><span class="about"> Name:</span> RIFAT ALI</h5>
+          <h5 class="card-title"><span class="about">Age:</span> 29</h5>
+          <h5 class="card-title"><span class="about"> District:</span> Dinajpur</b></h5>
+          <h5 class="card-title"><span class="about"> Thana:</span>Dinajpur Sadar</b></h5>
+          <h5 class="card-title"><span class="about">Exact Address:</span>7 number Newtown</h5>
+          <h5 class="card-title"><span class="about">Phone:</span>01728485133</h5>
+          <h6 class="card-title"><span class="about">Email:</span>mdislamnishat2002@gmail.com</h6>
+        </div>
+      </div>
+
+
+
+      <div class="O-Negative DINAJPUR card ALL-ROUNDER" id="name2">
+        <img src="IMAGES/wp4323467-blood-donation-wallpapers.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b><span class="about">Blood Group:</span> O NEGATIVE</b></h5>
+          <h5 class="card-title"><span class="about"> Name:</span> Md.Modon Ali negative</h5>
+          <h5 class="card-title"><span class="about">Age:</span> 29</h5>
+          <h5 class="card-title"><span class="about"> District:</span> Dinajpur</b></h5>
+          <h5 class="card-title"><span class="about"> Thana:</span>Dinajpur Sadar</b></h5>
+          <h5 class="card-title"><span class="about">Exact Address:</span>7 number Newtown</h5>
+          <h5 class="card-title"><span class="about">Phone:</span>01728485133</h5>
+          <h6 class="card-title"><span class="about">Email:</span>mdislamnishat2002@gmail.com</h6>
+        </div>
+      </div>
+
+
+      <div class="O-Positive DINAJPUR card ALL-ROUNDER" id="name3">
+        <img src="IMAGES/wp4323467-blood-donation-wallpapers.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b><span class="about">Blood Group:</span> O POSITIVE</b></h5>
+          <h5 class="card-title"><span class="about"> Name:</span> MD. AR RAHMAN</h5>
+          <h5 class="card-title"><span class="about">Age:</span> 00</h5>
+          <h5 class="card-title"><span class="about"> District:</span>RANGPUR</b></h5>
+          <h5 class="card-title"><span class="about"> Thana:</span>Dinajpur Sadar</b></h5>
+          <h5 class="card-title"><span class="about">Exact Address:</span>7 number Newtown</h5>
+          <h5 class="card-title"><span class="about">Phone:</span>01728485133</h5>
+          <h6 class="card-title"><span class="about">Email:</span>mdislamnishat2002@gmail.com</h6>
+        </div>
+      </div>
+      <div class="O-Positive DINAJPUR DINAJPUR-SADAR PHULBARI card ALL-ROUNDER" id="name4">
+        <img src="IMAGES/wp4323467-blood-donation-wallpapers.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b><span class="about">Blood Group:</span>  O-Positive</b></h5>
+          <h5 class="card-title"><span class="about"> Name:</span> Md.MAHFUZ ALI</h5>
+          <h5 class="card-title"><span class="about">Age:</span> 29</h5>
+          <h5 class="card-title"><span class="about"> District:</span> Dinajpur</b></h5>
+          <h5 class="card-title"><span class="about"> Thana:</span>Dinajpur Sadar-sundarban</b></h5>
+          <h5 class="card-title"><span class="about">Exact Address:</span>7 number Newtown</h5>
+          <h5 class="card-title"><span class="about">Phone:</span>01728485133</h5>
+          <h6 class="card-title"><span class="about">Email:</span>mdislamnishat2002@gmail.com</h6>
+        </div>
+      </div>
+
+                
+
+
+    </div>
+</div>
+
+
+
+<script>
+
+ 
+
+function SHOW(districtORthanaOrUpazilla){
+  const cardAll=document.querySelectorAll(".card").length;
+  for (let x = 0; x < cardAll; x++) {
+  
+    document.querySelectorAll(".card")[x].style.display="none";
+    var DinajpurCount=document.getElementsByClassName(districtORthanaOrUpazilla).length;
+    
+    const aa='.'+ districtORthanaOrUpazilla;
+    // console.log(aa);
+    var GETdINAJPUR = document.querySelectorAll('.'+ districtORthanaOrUpazilla);
+    
+    
+    for (let i = 0; i < DinajpurCount; i++) {
+      GETdINAJPUR[i].style.display="block";
+    };
+  }
+}
+
+
+
+//যেকোনো উপজেলা থানার নাম সেখানে দিবা সেটি সেই নামে একটি অপশন তৈরি করবে এবং সেই অপশনে ভ্যালু দিবে এবং আইডিও তৈরি করে দিবে
+
+function GIVEmyUpazilla(upazila,willPushinWhichOption){
+  const newOption = document.createElement('option');
+const optionText = document.createTextNode(upazila);
+// set option text
+newOption.appendChild(optionText);
+// and option value
+valueVALUE="#"+upazila;
+
+newOption.setAttribute('value',valueVALUE);
+newOption.setAttribute('id',upazila);
+document.getElementById(willPushinWhichOption).appendChild(newOption);
+ console.log(document.getElementById(willPushinWhichOption));
+
+}
+function hideOTHERSpagesWithoutBloodGroup(){
+  document.getElementById("DISTRICT-SEARCH").style.display="block";
+    document.getElementById("UPAZILA-SEARCH").style.display="none";
+    document.getElementById("UNION-SEARCH").style.display="none";
+    document.getElementById("BLOOD-GROUP-SEARCH").style.display="none";
+}
+//will block the other bloo group which are not selected
+
+function removeOtherBloodGroups(bloodGroup) {
+  var allDivs= document.getElementsByClassName("ALL-ROUNDER").length;
+     var ara=[];
+     for(let i=0;i<allDivs;i++){
+         var tag= document.getElementsByClassName("ALL-ROUNDER")[i].id;
+         ara.push(tag); 
+      }
+   
+      for (let j = 0; j< ara.length; j++){
+        theID=ara[j];
+        var lol="#"+theID;
+        var div1Class = $(lol).attr('class');
+        var lenthOfFullClass=div1Class.length;
+        var thePerfectClass="";
+        for (let x = 0; x < lenthOfFullClass; x++) {
+          if(div1Class[x]!=' '){
+            makeClassnameToString=div1Class[x];
+            makeClassnameToString=makeClassnameToString+"";
+            thePerfectClass=thePerfectClass+makeClassnameToString;
+          }
+          else{
+            break;
+          }
+        }
+        if(thePerfectClass!=bloodGroup){
+             $('#'+ theID).remove();
+        }
+    }
+}
+
+
+
+
+
+
+//----------------------optionbar -which blood group -------------------
+
+
+$("#optionbar-1").change(function(){
+  const clicked = $(this).val();
+
+  if(clicked=="#O-Positive"){
+    hideOTHERSpagesWithoutBloodGroup();
+    document.getElementById("group").innerHTML="....";
+    removeOtherBloodGroups("O-Positive");
+  }
+  if(clicked=="#O-Negative"){
+    hideOTHERSpagesWithoutBloodGroup();
+    document.getElementById("group").innerHTML="....";
+    removeOtherBloodGroups("O-Negative");
+  }
+  if(clicked=="#B-Positive"){
+    hideOTHERSpagesWithoutBloodGroup();
+    document.getElementById("group").innerHTML="....///";
+    removeOtherBloodGroups("B-Positive");
+  }
+  if(clicked=="#B-Negative"){
+    hideOTHERSpagesWithoutBloodGroup();
+    document.getElementById("group").innerHTML="....";
+    removeOtherBloodGroups("B-Negative");
+  }
+  if(clicked=="#A-Positive"){
+    hideOTHERSpagesWithoutBloodGroup();
+    document.getElementById("group").innerHTML="....";
+    removeOtherBloodGroups("A-Positive");
+  }
+  if(clicked=="#A-Negative"){
+    hideOTHERSpagesWithoutBloodGroup();
+    document.getElementById("group").innerHTML="....";
+    removeOtherBloodGroups("A-Negative");
+  }
+  if(clicked=="#AB-Positive"){
+    hideOTHERSpagesWithoutBloodGroup();
+    document.getElementById("group").innerHTML="....";
+    removeOtherBloodGroups("AB-Positive");
+  }
+  if(clicked=="#AB-Negative"){
+    hideOTHERSpagesWithoutBloodGroup();
+    document.getElementById("group").innerHTML="....";
+    removeOtherBloodGroups("AB-Negative");
+  }
+
+})
+
+
+
+
+
+  
+  $("#optionbar-2").change(function(){
+
+  const clicked = $(this).val();
+  // IF THE MAN CLICKED IN DINAJPUR ZILLA
+  if(clicked=="#DINAJPUR"){ //DINAJPUR ER MOTO ONNANNO DISTRICTGULAO KORTE HOBE
+    
+    document.getElementById("BLOOD-GROUP-SEARCH").style.display="none";
+     document.getElementById("DISTRICT-SEARCH").style.display="none";
+     document.getElementById("UPAZILA-SEARCH").style.display="block";
+
+    //  document.getElementById("UNION-SEARCH").style.display="none";
+     
+    SHOW("DINAJPUR");
+
+    document.getElementById("group").innerHTML="DINAJPUR DONATORS LIST";
+
+   //dinajpur er modhe kon kon upajillah ace segula call koro SOB CAPITAL LATTER  DIYO
+    GIVEmyUpazilla("DINAJPUR-SADAR","optionbar-3");
+    GIVEmyUpazilla("PHULBARI","optionbar-3");
+    GIVEmyUpazilla("BIRAMPUR","optionbar-3");
+    GIVEmyUpazilla("BOCHAGANJ","optionbar-3");
+    GIVEmyUpazilla("CHIRiRBANDAR","optionbar-3");
+    GIVEmyUpazilla("GHORAGHAT","optionbar-3");
+    GIVEmyUpazilla("HAKIMPUR","optionbar-3");
+    GIVEmyUpazilla("KAHAROLE","optionbar-3");
+    GIVEmyUpazilla("KHANSAMA","optionbar-3");
+    GIVEmyUpazilla("BOCHAGANJ","optionbar-3");
+    GIVEmyUpazilla("NAWABGANJ","optionbar-3");
+    GIVEmyUpazilla("PARBATIPUR","optionbar-3")
+  }
+
+  if(clicked=="#RANGPUR"){
+    
+    document.getElementById("BLOOD-GROUP-SEARCH").style.display="none";
+     document.getElementById("DISTRICT-SEARCH").style.display="none";
+     document.getElementById("UPAZILA-SEARCH").style.display="block";
+
+    SHOW("RANGPUR");
+    document.getElementById("group").innerHTML="RANGPUR DONATORS LIST";
+
+    
+   //dinajpur er modhe kon kon upajillah ace segula call koro SOB CAPITAL LATTER  DIYO
+   GIVEmyUpazilla("RANGPUR-SADAR","optionbar-3");
+    GIVEmyUpazilla("BADARGANJ","optionbar-3");
+    GIVEmyUpazilla("KAUNIA","optionbar-3");
+    GIVEmyUpazilla("GANGACHHARA","optionbar-3");
+    GIVEmyUpazilla("MITHAPUKUR","optionbar-3");
+    GIVEmyUpazilla("TARAGANJ","optionbar-3");
+    GIVEmyUpazilla("PIRGANJ","optionbar-3");
+    GIVEmyUpazilla("PIRGACHHA","optionbar-3");
+  }
+  if(clicked=="#ONNANO-JELA"){
+    //SEI JELLER SOKOL UPEJELLA --ETC
+  }
+
+
+
+
+});
+
+
+
+
+//------------------EROKOM KORE 64 TI JELLER UPOJELLA GULA LIKHTE HOBE----------------------
+
+
+$("#optionbar-3").change(function(){
+
+const clicked = $(this).val();
+if(clicked=="#DINAJPUR-SADAR"){
+
+document.getElementById("DISTRICT-SEARCH").style.display="none";
+document.getElementById("UPAZILA-SEARCH").style.display="none";
+document.getElementById("UNION-SEARCH").style.display="block";
+SHOW("DINAJPUR-SADAR");
+document.getElementById("group").innerHTML="DINAJPUR->SADAR DONATORS LIST";
+
+//dinajpur er modhe kon kon upajillah ace segula call koro SOB CAPITAL LATTER  DIYO
+//RANGPUR-SADAR ER SOB UNION/POUROSOVA/THANA LINK
+GIVEmyUpazilla("DINAJPUR-POUROSOVA","optionbar-4");
+GIVEmyUpazilla("CHEHELGAJI","optionbar-4");
+GIVEmyUpazilla("SUNDARBAN","optionbar-4");
+GIVEmyUpazilla("FAJILPUR","optionbar-4");
+GIVEmyUpazilla("SEKHPURA","optionbar-4");
+GIVEmyUpazilla("SASARA","optionbar-4");
+GIVEmyUpazilla("AWLIYAPUR","optionbar-4");
+GIVEmyUpazilla("UTHRAIL","optionbar-4");
+GIVEmyUpazilla("SANGKARPUR","optionbar-4");
+GIVEmyUpazilla("ASKORPUR","optionbar-4");
+GIVEmyUpazilla("KAMALPUR","optionbar-4");
+GIVEmyUpazilla("NAWABGANJ","optionbar-4");
+} 
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------
+
+function blockOtherUnion(upazillaName,activeUnion) {
+    var allDivs= document.getElementsByClassName(upazillaName).length;
+     var ara=[];
+     for(let i=0;i<allDivs;i++){
+         var tag= document.getElementsByClassName(upazillaName)[i].id;
+         ara.push(tag); 
+      }
+   
+      for (let j = 0; j< ara.length; j++){
+       var theID=ara[j];
+        var lol="#"+theID;
+        
+        var div1Class = $(lol).attr('class');
+        console.log(div1Class);
+        if(div1Class.indexOf(activeUnion) < 2){
+          document.getElementById(theID).style.display="none";
+        }
+      }
+ }
+
+
+
+
+
+$("#optionbar-4").change(function(){
+
+  const clicked = $(this).val();
+  blockOtherUnion("DINAJPUR-SADAR","SUNDARBAN");
+  if(clicked=="#SUNDARBAN"){
+    blockOtherUnion("DINAJPUR-SADAR","SUNDARBAN");
+   }
+   if(clicked=="#ONNANO-UNION"){
+    blockOtherUnion("DINAJPUR-SADAR","SUNDARBAN");
+   }
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//--------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+      
+    
+</script>
+
+
+<!--JS LINKS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+</html>
